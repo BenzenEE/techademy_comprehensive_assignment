@@ -1,0 +1,558 @@
+{
+	"info": {
+		"_postman_id": "0278b494-1229-475f-8519-bae3cce86bb4",
+		"name": "Question 8",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "26017122",
+		"_collection_link": "https://grey-capsule-38308.postman.co/workspace/493a75c8-e21c-43a9-8012-2e4376425ad5/collection/26017122-0278b494-1229-475f-8519-bae3cce86bb4?action=share&source=collection_link&creator=26017122"
+	},
+	"item": [
+		{
+			"name": "Get Request",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", () => {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"pm.test(\"Status code is 404\", () => {\r",
+							"    pm.response.to.have.status(404);\r",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.restful-api.dev/objects/5",
+					"protocol": "https",
+					"host": [
+						"api",
+						"restful-api",
+						"dev"
+					],
+					"path": [
+						"objects",
+						"5"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Get Request",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://api.restful-api.dev/objects/5",
+							"protocol": "https",
+							"host": [
+								"api",
+								"restful-api",
+								"dev"
+							],
+							"path": [
+								"objects",
+								"5"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Sun, 26 Jan 2025 04:32:51 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Vary",
+							"value": "Origin"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Method"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Headers"
+						},
+						{
+							"key": "cf-cache-status",
+							"value": "DYNAMIC"
+						},
+						{
+							"key": "Report-To",
+							"value": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v4?s=VYRTZ3w6GGOEAHNEuwsSOMo3Caz%2FkseqzPRFVRSaFr2IU9bY%2BnbAH6kiFwfEBq0DKfz8sxU4U2aJHs4Wv%2F9Vsi1MVvdZi2g1pJCc6Uy8aSe0lFqPgeXfz6g0PdFrHFaZ12UTsuRi\"}],\"group\":\"cf-nel\",\"max_age\":604800}"
+						},
+						{
+							"key": "NEL",
+							"value": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}"
+						},
+						{
+							"key": "Server",
+							"value": "cloudflare"
+						},
+						{
+							"key": "CF-RAY",
+							"value": "907dc80f0a0d5d8a-FRA"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "br"
+						},
+						{
+							"key": "alt-svc",
+							"value": "h3=\":443\"; ma=86400"
+						},
+						{
+							"key": "server-timing",
+							"value": "cfL4;desc=\"?proto=TCP&rtt=286433&min_rtt=286433&rtt_var=143216&sent=6&recv=6&lost=0&retrans=1&sent_bytes=4192&recv_bytes=843&delivery_rate=4630&cwnd=253&unsent_bytes=0&cid=f53546bdc4af5174&ts=1269&x=0\""
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": \"5\",\n    \"name\": \"Samsung Galaxy Z Fold2\",\n    \"data\": {\n        \"price\": 689.99,\n        \"color\": \"Brown\"\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Post Request",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Successful POST Request\", () => {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"pm.test(\"Unsupported Media Type\", () => {\r",
+							"    pm.response.to.have.status(415);\r",
+							"});\r",
+							"pm.test(\"Content-Type is application/json\", () => {\r",
+							"    pm.expect(pm.response.headers.get('Content-Type')).to.eql('application/json');\r",
+							"});\r",
+							"\r",
+							""
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Google Pixel 8\",\r\n    \"data\": {\r\n        \"processor\": \"Google Tensor G3\",\r\n        \"display\": \"6.2-inch OLED display with 120Hz refresh rate\",\r\n        \"battery\": \"4575mAh battery\",\r\n        \"storage\": \"128/256 GB\",\r\n        \"price\": \"$499\"\r\n    }\r\n}"
+				},
+				"url": {
+					"raw": "https://api.restful-api.dev/objects",
+					"protocol": "https",
+					"host": [
+						"api",
+						"restful-api",
+						"dev"
+					],
+					"path": [
+						"objects"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Post Request",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Google Pixel 8\",\r\n    \"data\": {\r\n        \"processor\": \"Google Tensor G3\",\r\n        \"display\": \"6.2-inch OLED display with 120Hz refresh rate\",\r\n        \"battery\": \"4575mAh battery\",\r\n        \"storage\": \"128/256 GB\",\r\n        \"price\": \"$499\"\r\n    }\r\n}"
+						},
+						"url": {
+							"raw": "https://api.restful-api.dev/objects",
+							"protocol": "https",
+							"host": [
+								"api",
+								"restful-api",
+								"dev"
+							],
+							"path": [
+								"objects"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Sun, 26 Jan 2025 04:22:40 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Vary",
+							"value": "Origin"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Method"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Headers"
+						},
+						{
+							"key": "cf-cache-status",
+							"value": "DYNAMIC"
+						},
+						{
+							"key": "Report-To",
+							"value": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v4?s=nvhlYX961Stv4ajEcuECchlxv%2FYSuuVGP4jh8fPUtOX%2BdA1T7oSNDCE6p1TeFMD5vIbw%2Bj5fvkXkTrYp7iop%2FAlT1K%2FiFjrh5qGQ7%2Btn76rv2QYmuaZg%2B%2FeXqFv%2FWYRoiGh7ob4b\"}],\"group\":\"cf-nel\",\"max_age\":604800}"
+						},
+						{
+							"key": "NEL",
+							"value": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}"
+						},
+						{
+							"key": "Server",
+							"value": "cloudflare"
+						},
+						{
+							"key": "CF-RAY",
+							"value": "907db9257e7adca1-FRA"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "br"
+						},
+						{
+							"key": "alt-svc",
+							"value": "h3=\":443\"; ma=86400"
+						},
+						{
+							"key": "server-timing",
+							"value": "cfL4;desc=\"?proto=TCP&rtt=424452&min_rtt=338747&rtt_var=160307&sent=34&recv=31&lost=0&retrans=1&sent_bytes=6895&recv_bytes=1997&delivery_rate=12751&cwnd=254&unsent_bytes=0&cid=d65e4c6648e01498&ts=31981&x=0\""
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": \"ff808181932badb60194a0d8f43679dc\",\n    \"name\": \"Google Pixel 8\",\n    \"createdAt\": \"2025-01-26T04:22:40.438+00:00\",\n    \"data\": {\n        \"processor\": \"Google Tensor G3\",\n        \"display\": \"6.2-inch OLED display with 120Hz refresh rate\",\n        \"battery\": \"4575mAh battery\",\n        \"storage\": \"128/256 GB\",\n        \"price\": \"$499\"\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Put Request",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", () => {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"pm.test(\"Status code is 404\", () => {\r",
+							"    pm.response.to.have.status(404);\r",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Google Pixel 8\",\r\n    \"data\": {\r\n        \"processor\": \"Google Tensor G3\",\r\n        \"display\": \"6.2-inch OLED display with 120Hz refresh rate\",\r\n        \"battery\": \"4575mAh battery\",\r\n        \"storage\": \"128/256 GB\",\r\n        \"os\": \"Android 14\",\r\n        \"price\": \"$499\"\r\n    }\r\n}"
+				},
+				"url": {
+					"raw": "https://api.restful-api.dev/objects/ff808181932badb60194a0d8f43679dc",
+					"protocol": "https",
+					"host": [
+						"api",
+						"restful-api",
+						"dev"
+					],
+					"path": [
+						"objects",
+						"ff808181932badb60194a0d8f43679dc"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Put Request",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Google Pixel 8\",\r\n    \"data\": {\r\n        \"processor\": \"Google Tensor G3\",\r\n        \"display\": \"6.2-inch OLED display with 120Hz refresh rate\",\r\n        \"battery\": \"4575mAh battery\",\r\n        \"storage\": \"128/256 GB\",\r\n        \"os\": \"Android 14\",\r\n        \"price\": \"$499\"\r\n    }\r\n}"
+						},
+						"url": {
+							"raw": "https://api.restful-api.dev/objects/ff808181932badb60194a0d8f43679dc",
+							"protocol": "https",
+							"host": [
+								"api",
+								"restful-api",
+								"dev"
+							],
+							"path": [
+								"objects",
+								"ff808181932badb60194a0d8f43679dc"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Sun, 26 Jan 2025 04:23:13 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Vary",
+							"value": "Origin"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Method"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Headers"
+						},
+						{
+							"key": "cf-cache-status",
+							"value": "DYNAMIC"
+						},
+						{
+							"key": "Report-To",
+							"value": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v4?s=gXA%2B8gGrHDk%2BNhuS2gTC867xezClpTryPLGWRcBSR21Ihh%2FtgMAhMrK8yH6SNsK1XXebNi7567jZUmkCYNEkWUHCSgC3aSrGcNVIX2xpgSw3TXc71d2kHc5%2BASz6KZhszxMVwX%2Fz\"}],\"group\":\"cf-nel\",\"max_age\":604800}"
+						},
+						{
+							"key": "NEL",
+							"value": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}"
+						},
+						{
+							"key": "Server",
+							"value": "cloudflare"
+						},
+						{
+							"key": "CF-RAY",
+							"value": "907db9f25929dca1-FRA"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "br"
+						},
+						{
+							"key": "alt-svc",
+							"value": "h3=\":443\"; ma=86400"
+						},
+						{
+							"key": "server-timing",
+							"value": "cfL4;desc=\"?proto=TCP&rtt=405577&min_rtt=338747&rtt_var=122891&sent=64&recv=59&lost=0&retrans=2&sent_bytes=9316&recv_bytes=2638&delivery_rate=12751&cwnd=255&unsent_bytes=0&cid=d65e4c6648e01498&ts=64800&x=0\""
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": \"ff808181932badb60194a0d8f43679dc\",\n    \"name\": \"Google Pixel 8\",\n    \"updatedAt\": \"2025-01-26T04:23:13.206+00:00\",\n    \"data\": {\n        \"processor\": \"Google Tensor G3\",\n        \"display\": \"6.2-inch OLED display with 120Hz refresh rate\",\n        \"battery\": \"4575mAh battery\",\n        \"storage\": \"128/256 GB\",\n        \"os\": \"Android 14\",\n        \"price\": \"$499\"\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Delete Request",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", () => {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"pm.test(\"Status code is 404\", () => {\r",
+							"    pm.response.to.have.status(404);\r",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://api.restful-api.dev/objects/ff808181932badb60194a0d8f43679dc",
+					"protocol": "https",
+					"host": [
+						"api",
+						"restful-api",
+						"dev"
+					],
+					"path": [
+						"objects",
+						"ff808181932badb60194a0d8f43679dc"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Delete Request",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "https://api.restful-api.dev/objects/ff808181932badb60194a0d8f43679dc",
+							"protocol": "https",
+							"host": [
+								"api",
+								"restful-api",
+								"dev"
+							],
+							"path": [
+								"objects",
+								"ff808181932badb60194a0d8f43679dc"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Sun, 26 Jan 2025 04:23:30 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Vary",
+							"value": "Origin"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Method"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Headers"
+						},
+						{
+							"key": "cf-cache-status",
+							"value": "DYNAMIC"
+						},
+						{
+							"key": "Report-To",
+							"value": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v4?s=gT4ErOA61M7gkySB1L7duAL%2F8ylZbefLIL730ESBGHcZYSh9PUfKxKrd5xnKWLwJsMJTtOW0dpqdIqKm4IEeGXlMcGBgRNBNXVz1UsnCF2GKaZc7P%2Bmyl0oYy4lpckHnEfAfOljH\"}],\"group\":\"cf-nel\",\"max_age\":604800}"
+						},
+						{
+							"key": "NEL",
+							"value": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}"
+						},
+						{
+							"key": "Server",
+							"value": "cloudflare"
+						},
+						{
+							"key": "CF-RAY",
+							"value": "907dba5f1d4ddca1-FRA"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "br"
+						},
+						{
+							"key": "alt-svc",
+							"value": "h3=\":443\"; ma=86400"
+						},
+						{
+							"key": "server-timing",
+							"value": "cfL4;desc=\"?proto=TCP&rtt=372834&min_rtt=259582&rtt_var=121884&sent=82&recv=75&lost=0&retrans=2&sent_bytes=10560&recv_bytes=2934&delivery_rate=21340&cwnd=255&unsent_bytes=0&cid=d65e4c6648e01498&ts=82073&x=0\""
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Object with id = ff808181932badb60194a0d8f43679dc has been deleted.\"\n}"
+				}
+			]
+		}
+	]
+}

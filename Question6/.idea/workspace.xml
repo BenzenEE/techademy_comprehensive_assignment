@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="efaf234d-86a5-43b0-8707-55bea4655ab9" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../../Python/practice/.idea/practice.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Python/sll/.idea/sll.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../java_codes/ArrayList/ArrayList.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../java_codes/CustomArrayList/CustomArrayList.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../java_codes/Enum/Enum.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../java_codes/EnumSet/EnumSet.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../java_codes/Exception/Exception.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../java_codes/Exception_handling/Exception_handling.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../java_codes/Exercise/Exercise.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../java_codes/File_handling/File_handling.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../java_codes/Generics/Generics.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../java_codes/HashSet/HashSet.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../java_codes/Jdbc/Jdbc.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../java_codes/Learning/Learning.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../java_codes/LinkedList/LinkedList.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../java_codes/Map/untitled104.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../java_codes/Mathematical_gfg/Mathematical_gfg.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../java_codes/OCJA/OCJA.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../java_codes/PracticalAsg/PracticalAsg.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../java_codes/Practice/Practice.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../java_codes/PriorityQueue/PriorityQueue.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../java_codes/Queue/Queue.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../java_codes/Set/Set.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../java_codes/Stack/Stack.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../java_codes/String/String.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../java_codes/Thread/Thread.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../java_codes/TreeSet/TreeSet.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../java_codes/Virtusa/Virtusa.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../java_codes/WrapperClass/WrapperClass.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../java_codes/java_codes.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../jee-2022-12/eclipse/.node/node-v18.12.1-win-x64/node_modules/npm/node_modules/clone/clone.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/techademy.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Question1/Question1.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/AppTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../README.md" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 7
+}]]></component>
+  <component name="ProjectId" id="2s9ZjP9fbyJYpTkagzRddMVvSTg" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/SAYAN DAS/Desktop/Assignment/techademy_comprehensive_asg/Question1"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="efaf234d-86a5-43b0-8707-55bea4655ab9" name="Changes" comment="" />
+      <created>1737869888140</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1737869888140</updated>
+    </task>
+    <servers />
+  </component>
+</project>
