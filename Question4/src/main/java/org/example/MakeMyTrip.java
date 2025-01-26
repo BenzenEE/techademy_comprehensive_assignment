@@ -33,7 +33,7 @@ public class MakeMyTrip {
         findElementByXpath(driver, "//*[@id=\"top-banner\"]/div[2]/div/div/div/div/div[2]/div[1]/div[2]/div[1]/div/div/div/input").sendKeys("kolkata");
         Thread.sleep(1000);
         clickElement(wait, "//*[@id=\"react-autowhatever-1-section-0-item-0\"]");
-        clickElement(wait, "//*[@id=\"top-banner\"]/div[2]/div/div/div/div/div[2]/div[1]/div[3]/div[1]/div/div/div/div[2]/div/div[2]/div[1]/div[3]/div[4]/div[7]");
+        clickElement(wait, "//*[@id=\"top-banner\"]/div[2]/div/div/div/div/div[2]/div[1]/div[3]/div[1]/div/div/div/div[2]/div/div[2]/div[2]/div[3]/div[5]/div[6]");
 
         clickElement(wait, "//*[@id=\"top-banner\"]/div[2]/div/div/div/div/div[2]/p/a");
     }
